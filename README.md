@@ -18,7 +18,7 @@ npm run dev
 pnpm run  dev
 ```
 
-Then open `http://localhost:3000`
+Then open `https://localhost:3000`
 
 
 ## Important Club Policy
