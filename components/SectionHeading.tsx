@@ -12,7 +12,7 @@ export function SectionHeading({
       <h2 className="mt-3 text-3xl font-semibold tracking-tight text-stone-950 sm:text-4xl">
         {title}
       </h2>
-      <p className="mt-4 text-base leading-7 text-stone-700 sm:text-lg">
+      <p className="mt-4 text-base leading-7 text-stone-800 sm:text-lg">
         {description}
       </p>
     </div>

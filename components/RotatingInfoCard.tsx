@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 
 type RotatingInfoCardItem = {
-  eyebrow: string;
   title: string;
   description: string;
 };
@@ -60,9 +59,6 @@ export function RotatingInfoCard({ items }: RotatingInfoCardProps) {
         <div
           className={`space-y-4 transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"}`}
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-stone-500">
-            {activeItem.eyebrow}
-          </p>
           <h3 className="max-w-lg text-3xl font-semibold tracking-tight text-stone-950 sm:text-4xl">
             {activeItem.title}
           </h3>

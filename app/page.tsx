@@ -4,104 +4,137 @@ import { Navbar } from "@/components/Navbar";
 import { ResourceCard } from "@/components/ResourceCard";
 import { RotatingInfoCard } from "@/components/RotatingInfoCard";
 import { SectionHeading } from "@/components/SectionHeading";
+import { title } from "process";
 
 const members = [
   {
     name: "Mallu",
-    description:
-      "President of Maas Kalab",
+    description: "President of Maas Kalab",
   },
   {
-    name: "-",
-    description:
-      "Prime Minister of Maas Kalab",
+    name: "Sejal",
+    description: "Maas Enthusiast", // Maas Enthusiast is a place holder
   },
   {
     name: "exhidna tea",
-    description:
-      "Vice President of Maas Kalab",
+    description: "Vice President of Maas Kalab",
   },
   {
     name: "abneeeees",
-    description:
-      "Food Inspector of Maas Kalab",
+    description: "Food Inspector of Maas Kalab",
   },
   {
     name: "V8",
-    description:
-      "Event Coordinator of Maas Kalab",
+    description: "Event Coordinator of Maas Kalab",
   },
+  {
+    name: "LilSuperUser",
+    description: "Maas Enthusiast",
+  },
+  {
+    name: "Karan",
+    description: "Maas Enthusiast",
+  },
+  {
+    name: "K2",
+    description: "Maas Man"
+  }
 ];
 
 const resources = [
   {
-    imgSrc: "shaheen_bagh_res.png",
-    title: "Shaheen Bagh",
-    description:
-      "A place in New Delhi known for its vibrant street food scene, especially non-vegetarian delicacies.",
-    addr: "#"
+    imgSrc: "resources/gulrez_kabab_corner.png",
+    title: "Gulrez Kabab Corner",
+    description: "placeholder",
+    addr: "https://share.google/pQdWHFnzm1GzWbmio"
   },
   {
-    title: "Zakhir Nagar",
-    description:
-      "A neighborhood in Hyderabad famous for its biryani and other non-vegetarian dishes, making it a must-visit for food lovers.",
-    addr: "#"
+    imgSrc: "resources/hafiz_ji_parathe_wale.png",
+    title: "HAFIZ JI PARATHE WALE",
+    description: "placeholder",
+    addr: "https://share.google/0aaDdAPEPtuRPNXY3"
   },
   {
-    title: "Jama Masjid",
-    description:
-      "One of the largest mosques in India, located in Old Delhi, surrounded by bustling markets and renowned for its delicious non-vegetarian street food offerings.",
-    addr: "#"
+    imgSrc: "resources/imran_nihari_shop.png",
+    title: "Imran Nihari Shop Turkmangate Delhi",
+    description: "placeholder",
+    addr: "https://share.google/v9UlFeH1g9ChM4Z2E"
     },
   {
-    title: "Connought ",
-    description:
-      "A popular area in New Delhi with a variety of restaurants and street food vendors, offering a range of non-vegetarian dishes that attract food enthusiasts.",
-    addr: "#"
+    imgSrc: "resources/sangam_kabab_corner.png",
+    title: "Sangam Kabab Corner", 
+    description: "placeholder",
+    addr: "https://share.google/zb9N2rAmisskdVEko"
   },
+  {
+    imgSrc: "resources/talib_kabab_corner.png",
+    title: "TALIB KABAB CORNER",
+    description: "placeholder",
+    addr: "https://share.google/TZayhAx1eB3KFdZAE"
+  },
+  {
+    imgSrc: "resources/al_nihar.png",
+    title: "Al Nihar",
+    description: "placeholder",
+    addr: "https://share.google/5e6EiHaIjbW2qFqDB1"
+  },
+  {
+    imgSrc: "resources/pul_bangash_wale.png",
+    title: "Pul Bangash Wale",
+    description: "placeholder",
+    addr: "https://share.google/aJb6xXr61kKSJ9fNx"
+  }
 ];
 
 const miniMeetups = [
   {
-    title: "Late Night Kebab Run",
-    description:
-      "A chill meetup idea for a small group to explore one famous food lane together.",
+    imgSrc: "miniMeetups/briyani.png",
+    title: "Briyani shop near Kolez",
+    description: "Placeholder",
+    date: "5-12-2025",
   },
   {
-    title: "Sunday Breakfast Scene",
-    description:
-      "Use this for early-morning gatherings focused on nihari, paya, or local breakfast specials.",
+    imgSrc: "miniMeetups/gulawati_kebab.png",
+    title: "Adarsh Ka Laptop",
+    description: "placeholder",
+    date: "16-02-2026",
   },
   {
-    title: "Quick Review Meetup",
-    description:
-      "A small-format hangout where members try one spot and drop fast ratings and notes.",
+    imgSrc: "miniMeetups/humayun_tomb.png",
+    title: "Happy B'day",
+    description: "placeholder",
+    date: "18-03-2026",
   },
+  {
+    imgSrc: "miniMeetups/post_foss_hack.png",
+    title: "Post FOSS Hack",
+    description: "placeholder",
+    date: "29-03-2026 - 31-03-2026",
+  },
+  {
+    imgSrc: "miniMeetups/Om_ki_briyani.png",
+    title: "Om ki Briyani",
+    description: "placeholder",
+    date: "10-04-2026",
+  }
 ];
 
 const clubHighlights = [
   {
-    eyebrow: "Club Mood",
-    title: "Food, people, stories",
-    description: "Use this spot for a quick intro to the vibe of Maas Kalab.",
+    title: "About Maas Kalab",
+    description: "Maas Kalab is a commmunity of Maas Khors from dilli those who love to eat and cook Maas.",
   },
   {
-    eyebrow: "What Happens",
-    title: "Meetups and food hunts",
-    description:
-      "Perfect for listing your tastings, cookouts, or monthly events.",
+    title: "Maas Hacks and Meetups",
+    description: "Maas Hack is out flagship event and we even do some mini events time to time.",
   },
   {
-    eyebrow: "Who It Is For",
-    title: "Open to curious members",
-    description:
-      "Add your own rules, city chapters, or membership criteria later.",
+    title: "What we eat ?",
+    description: "Nihari, Briyani, Shwarma, Kebab, Paratha, Kakori Kebab, Gulawati Kebab, Keema etc.",
   },
   {
-    eyebrow: "Why Join",
-    title: "A simple base to build on",
-    description:
-      "This layout is intentionally lightweight so you can expand it easily.",
+    title: "Motto",
+    description: "'jo Maas khaye wo mera bhai' ~ Karan",
   },
 ];
 
@@ -154,28 +187,36 @@ export default function Home() {
           <div className="mx-auto max-w-6xl rounded-[2.1rem] border border-stone-200 bg-white/80 p-8 shadow-[0_20px_80px_rgba(28,25,23,0.08)] backdrop-blur sm:p-10">
             <SectionHeading
               title="MAAS HACK"
-              description="Treat this like your flagship program. It can become a hack-style event, a community food challenge, or any signature Maas Kalab initiative."
+              description="Maas Kalab's flagship program. We meet and Eat (A Lot)"
             />
             <div className="grid gap-4 md:grid-cols-3">
               <InfoCard
-                eyebrow="Jama Masjid"
+                imgSrc="maashack/maashack_1.png"
                 title="Maas Hack 1.0"
                 description="placeholder"
+                date= "04-10-25"
+                link="/masshacks/1"
               />
               <InfoCard
-                eyebrow="Shaheen Bagh"
+                imgSrc="maashack/maashack_2.png"
                 title="Maas Hack 2.0"
                 description="placeholder"
+                date= "28-11-25"
+                link="/masshacks/2"
               />
               <InfoCard
-                eyebrow="Shaheen Bagh"
+                imgSrc="maashack/maashack_3.png"
                 title="Maas Hack 3.0"
                 description="placeholder"
+                date= "05-03-26"
+                link="/masshacks/3"
               />
               <InfoCard
-                eyebrow="Zakhir Nagar"
+                imgSrc="maashack/maashack_4.png"
                 title="Maas Hack 4.0"
                 description="placeholder"
+                date= "15-04-26"
+                link="/masshacks/4"
               />
             </div>
           </div>
@@ -187,16 +228,17 @@ export default function Home() {
         >
           <div className="mx-auto max-w-6xl">
             <SectionHeading
-              title="Smaller club scenes between the big Maas Hacks"
-              description="This section is for compact hangouts, casual food runs, and low-key member meetups that happen more often."
+              title="Mini Maasups"
+              description="Other than Maas Hacks, Maas Kalab hosts some mini meetups too!"
             />
             <div className="grid gap-5 md:grid-cols-3">
               {miniMeetups.map((meetup) => (
                 <InfoCard
                   key={meetup.title}
-                  eyebrow="Mini Meetup"
+                  imgSrc={meetup.imgSrc}
                   title={meetup.title}
                   description={meetup.description}
+                  date={meetup.date}
                 />
               ))}
             </div>
@@ -241,20 +283,18 @@ export default function Home() {
           <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.95fr_1.05fr]">
             <div>
               <SectionHeading
-                title="Keep the joining flow simple"
-                description="This section can point visitors to Instagram, a WhatsApp group, a form, or a short About Us story."
+                title="Become a Maas Khor"
+                description="Tap the Join Now button"
               />
             </div>
             <div className="grid gap-4">
               <InfoCard
-                eyebrow="Instagram"
-                title="@maaskalab"
-                description="Replace this with your real handle and add a proper social link later."
+                title="whatsapp/@masskalab"
+                link="https://chat.whatsapp.com/HFMab1ihd6V1loDslSDZk6"
               />
               <InfoCard
-                eyebrow="Join Steps"
-                title="Follow, message, attend"
-                description="A clean placeholder flow: follow the page, send a message, and join the next meetup."
+                title="Github/@masskalab"
+                link="https://github.com/abneeeees/Maas-Kalab/"
               />
             </div>
           </div>
@@ -276,7 +316,8 @@ export default function Home() {
                   imgSrc={resource.imgSrc}
                   title={resource.title}
                   description={resource.description}
-                  addr={resource.addr}
+                  addr={resource.addr
+                  }
                 />
               ))}
             </div>
