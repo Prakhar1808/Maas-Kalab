@@ -54,7 +54,7 @@ export function HeroSection({ highlights }: { highlights: HeroHighlight[] }) {
   return (
     <section
       id="home"
-      className="relative overflow-x-hidden px-6 py-28 sm:px-10 sm:py-36 lg:px-16 lg:py-44"
+      className="relative overflow-x-hidden px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24"
     >
       <img
         src="/decor/fried-chicken.png"

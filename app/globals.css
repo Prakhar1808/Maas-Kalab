@@ -189,6 +189,14 @@ a {
   text-decoration: none;
 }
 
+.resource-scroll {
+  scrollbar-width: none;
+}
+
+.resource-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
