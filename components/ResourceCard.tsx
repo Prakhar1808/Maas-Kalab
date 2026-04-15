@@ -2,19 +2,36 @@ type ResourceCardProps = {
   imgSrc?: string;
   title: string;
   description: string;
-  addr: string; 
+  addr: string;
 };
 
-export function ResourceCard({imgSrc, title, description, addr }: ResourceCardProps) {
+export function ResourceCard({
+  imgSrc,
+  title,
+  description,
+  addr,
+}: ResourceCardProps) {
   return (
-    <article className="rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-[0_14px_40px_rgba(28,25,23,0.08)]">
+    <article className="flex h-full flex-col rounded-2xl border border-[var(--border-card)] bg-[var(--card-surface)] shadow-[0_14px_40px_var(--shadow-card)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_var(--shadow-card-lg)]">
       <a
-      href={addr}>
-        <img className="rounded-[1.1rem] w-auto h-auto shadow-[0_14px_40px_rgba(28,25,23,0.18)]" src={imgSrc} alt={title} />
-        <h3 className="mt-3 text-2xl font-semibold tracking-tight text-stone-950">
-        {title}
+        href={addr}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex h-full flex-col p-5"
+      >
+        <div className="aspect-[4/3] w-full overflow-hidden rounded-xl">
+          <img
+            className="h-full w-full rounded-xl object-cover shadow-[0_14px_40px_var(--shadow-card)]"
+            src={imgSrc}
+            alt={title}
+          />
+        </div>
+        <h3 className="mt-3 text-lg font-semibold tracking-tight text-[var(--red-dark)]">
+          {title}
         </h3>
-        <p className="mt-3 text-base leading-7 text-stone-700">{description}</p>
+        <p className="mt-1.5 flex-1 text-sm leading-relaxed text-[var(--text-muted)]">
+          {description}
+        </p>
       </a>
     </article>
   );

@@ -1,8 +1,133 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f80505b2;
+  --background: #fdf2e9;
   --foreground: #1c1917;
+  --red-primary: #7f1d1d;
+  --red-dark: #7f1d1d;
+  --red-light: #fef2f2;
+  --amber-accent: #d97706;
+  --card-surface: #fffbf5;
+  --text-muted: #57534e;
+  --hero-faint: rgba(127, 29, 29, 0.18);
+  --hero-title: #7f1d1d;
+  --border-subtle: rgba(254, 202, 202, 0.55);
+  --border-card: rgba(254, 202, 202, 0.45);
+  --shadow-card: rgba(127, 29, 29, 0.07);
+  --shadow-card-lg: rgba(127, 29, 29, 0.06);
+  --nav-from: rgba(255, 255, 255, 0.95);
+  --nav-to: rgba(254, 242, 242, 0.4);
+  --nav-border: rgba(254, 202, 202, 0.7);
+  --nav-shadow: rgba(185, 28, 28, 0.12);
+  --hero-pill-bg: rgba(254, 242, 242, 0.72);
+  --hero-pill-border: rgba(254, 202, 202, 0.6);
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-border: #fca5a5;
+  --btn-secondary-text: #7f1d1d;
+  --btn-secondary-hover-border: #f87171;
+  --btn-secondary-hover-bg: #fef2f2;
+  --marquee-bg: #7f1d1d;
+  --marquee-border: rgba(254, 202, 202, 0.5);
+  --carousel-image-bg: #fef2f2;
+  --carousel-badge-bg: #fef2f2;
+  --carousel-badge-border: rgba(254, 202, 202, 0.6);
+  --carousel-badge-text: #7f1d1d;
+  --carousel-body: #57534e;
+  --carousel-nav-bg: #ffffff;
+  --carousel-nav-border: #fecaca;
+  --carousel-nav-text: #7f1d1d;
+  --carousel-nav-hover-bg: #fef2f2;
+  --carousel-nav-hover-border: #fca5a5;
+  --carousel-dot-inactive: #fecaca;
+  --carousel-dot-inactive-hover: #fca5a5;
+  --carousel-flagship-label: #fecaca;
+  --carousel-scrim: rgba(69, 10, 10, 0.55);
+  --member-orb-from: #fecaca;
+  --member-orb-to: #fca5a5;
+  --member-orb-text: #7f1d1d;
+  --footer-bg: #7f1d1d;
+  --footer-text: #ffffff;
+  --footer-muted: rgba(254, 202, 202, 0.72);
+  --footer-link-hover: #ffffff;
+  --footer-accent-border: rgba(248, 113, 113, 0.45);
+  --bg-glow-top: rgba(185, 28, 28, 0.12);
+  --bg-glow-mid: transparent;
+  --bg-grad-1: #fdf2e9;
+  --bg-grad-2: #fcefe6;
+  --bg-grad-3: #fdf5ed;
+  --bg-grad-4: #fcf0e6;
+  --accent-soft: rgba(127, 29, 29, 0.88);
+  --decor-shadow: rgba(127, 29, 29, 0.12);
+  --dot-active: rgba(127, 29, 29, 0.7);
+  --dot-inactive: rgba(127, 29, 29, 0.2);
+  --primary-btn-shadow: rgba(127, 29, 29, 0.2);
+  --primary-btn-hover-shadow: rgba(127, 29, 29, 0.3);
+  --primary-btn-hover: #450a0a;
+}
+
+html.dark {
+  --background: #0c0809;
+  --foreground: #faf7f2;
+  --red-primary: #f59e0b;
+  --red-dark: #fbbf24;
+  --red-light: #2a1215;
+  --amber-accent: #f59e0b;
+  --card-surface: #160f12;
+  --text-muted: #b8a99a;
+  --hero-faint: rgba(245, 158, 11, 0.52);
+  --hero-title: #fff7ed;
+  --border-subtle: rgba(245, 158, 11, 0.2);
+  --border-card: rgba(245, 158, 11, 0.22);
+  --shadow-card: rgba(0, 0, 0, 0.35);
+  --shadow-card-lg: rgba(0, 0, 0, 0.45);
+  --nav-from: rgba(22, 15, 18, 0.92);
+  --nav-to: rgba(35, 22, 10, 0.48);
+  --nav-border: rgba(245, 158, 11, 0.22);
+  --nav-shadow: rgba(245, 158, 11, 0.14);
+  --hero-pill-bg: rgba(45, 28, 8, 0.55);
+  --hero-pill-border: rgba(245, 158, 11, 0.35);
+  --btn-secondary-bg: rgba(22, 15, 18, 0.88);
+  --btn-secondary-border: rgba(245, 158, 11, 0.4);
+  --btn-secondary-text: #fcd34d;
+  --btn-secondary-hover-border: #f59e0b;
+  --btn-secondary-hover-bg: rgba(55, 35, 8, 0.88);
+  --marquee-bg: #2a0c06;
+  --marquee-border: rgba(180, 83, 9, 0.35);
+  --carousel-image-bg: #1a0f14;
+  --carousel-badge-bg: rgba(35, 22, 10, 0.92);
+  --carousel-badge-border: rgba(245, 158, 11, 0.28);
+  --carousel-badge-text: #fcd34d;
+  --carousel-body: #b8a99a;
+  --carousel-nav-bg: rgba(22, 15, 18, 0.92);
+  --carousel-nav-border: rgba(245, 158, 11, 0.22);
+  --carousel-nav-text: #fcd34d;
+  --carousel-nav-hover-bg: rgba(55, 35, 8, 0.85);
+  --carousel-nav-hover-border: rgba(245, 158, 11, 0.45);
+  --carousel-dot-inactive: rgba(245, 158, 11, 0.2);
+  --carousel-dot-inactive-hover: rgba(245, 158, 11, 0.45);
+  --carousel-flagship-label: #fde68a;
+  --carousel-scrim: rgba(12, 8, 9, 0.72);
+  --member-orb-from: #451a03;
+  --member-orb-to: #7c2d12;
+  --member-orb-text: #fff7ed;
+  --footer-bg: #0a0607;
+  --footer-text: #fff7ed;
+  --footer-muted: rgba(253, 230, 138, 0.55);
+  --footer-link-hover: #ffffff;
+  --footer-accent-border: rgba(245, 158, 11, 0.4);
+  --bg-glow-top: rgba(245, 158, 11, 0.1);
+  --bg-glow-mid: rgba(180, 83, 9, 0.06);
+  --bg-grad-1: #0c0809;
+  --bg-grad-2: #110a0d;
+  --bg-grad-3: #130b0f;
+  --bg-grad-4: #0e090b;
+  --accent-soft: rgba(245, 158, 11, 0.92);
+  --decor-shadow: rgba(0, 0, 0, 0.35);
+  --dot-active: rgba(245, 158, 11, 0.85);
+  --dot-inactive: rgba(245, 158, 11, 0.22);
+  --primary-btn-shadow: rgba(245, 158, 11, 0.25);
+  --primary-btn-hover-shadow: rgba(245, 158, 11, 0.4);
+  --primary-btn-hover: #d97706;
 }
 
 @theme inline {
@@ -14,11 +139,44 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
+  background-color: var(--background);
+  background-image:
+    radial-gradient(
+      ellipse 130% 55% at 50% -28%,
+      var(--bg-glow-top),
+      transparent 58%
+    ),
+    radial-gradient(
+      ellipse 70% 45% at 92% 72%,
+      var(--bg-glow-mid),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      var(--bg-grad-1) 0%,
+      var(--bg-grad-2) 34%,
+      var(--bg-grad-3) 68%,
+      var(--bg-grad-4) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color-scheme: light;
+  transition: background-color 0.4s ease, color 0.3s ease;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark .hero-script {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 0 28px rgba(245, 158, 11, 0.22);
 }
 
 body {
-  background: radial-gradient( rgba(249, 22, 22, 0.2), transparent 28%),
-    var(--background);
+  background: transparent;
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
@@ -29,4 +187,21 @@ body {
 
 a {
   text-decoration: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.embla__slide__scale {
+  transition: transform 0.16s ease-out;
 }

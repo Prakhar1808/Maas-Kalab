@@ -1,34 +1,46 @@
+"use client";
+
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { useEffect, useState } from "react";
+
 const navItems = [
   { label: "Home", href: "#home" },
-  { label: "Mass Hack", href: "#mass-hack" },
+  { label: "Maas Hack", href: "#mass-hack" },
   { label: "Members", href: "#members" },
-  { label: "How To Join", href: "#join" },
+  { label: "Join", href: "#join" },
   { label: "Resources", href: "#resources" },
 ];
 
 export function Navbar() {
-  return (
-    <header className="sticky top-0 z-50 px-6 py-4 sm:px-10 lg:px-16">
-      <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/60 bg-white/75 px-5 py-3 shadow-[0_16px_50px_rgba(28,25,23,0.12)] backdrop-blur">
-        <a
-          href="#home"
-          className="text-lg font-semibold tracking-[0.18em] text-stone-950 uppercase"
-        >
-          Maas Kalab
-        </a>
+  const [scrolled, setScrolled] = useState(false);
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-stone-700 transition hover:text-stone-950"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-      </div>
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 32);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <header className="sticky top-0 z-50 flex justify-center px-4 py-3 sm:py-4">
+      <nav
+        className={`flex items-center gap-0.5 rounded-full px-1.5 py-1 transition-all duration-500 ${
+          scrolled
+            ? "border border-[var(--nav-border)] bg-[var(--background)]/60 shadow-[0_4px_24px_var(--nav-shadow)] backdrop-blur-2xl"
+            : "border border-transparent bg-transparent shadow-none backdrop-blur-none"
+        }`}
+      >
+        {navItems.map((item) => (
+          <a
+            key={item.href}
+            href={item.href}
+            className="rounded-full px-3 py-1.5 text-xs font-semibold text-[var(--foreground)] transition-all hover:bg-[var(--red-primary)] hover:text-white sm:px-4 sm:py-2 sm:text-sm"
+          >
+            {item.label}
+          </a>
+        ))}
+        <ThemeToggle />
+      </nav>
     </header>
   );
 }

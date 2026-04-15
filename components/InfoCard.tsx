@@ -2,29 +2,47 @@ type InfoCardProps = {
   imgSrc?: string;
   title: string;
   description?: string;
-  date?: string
+  date?: string;
   link?: string;
 };
 
-export function InfoCard({ imgSrc, title, description, date, link }: InfoCardProps) {
+export function InfoCard({
+  imgSrc,
+  title,
+  description,
+  date,
+  link,
+}: InfoCardProps) {
   return (
-    <article className="rounded-[1.5rem] border border-stone-200 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(245,240,232,0.92))] p-6 shadow-[0_10px_35px_rgba(28,25,23,0.06)]">
-      {/* <p className="text-xs font-semibold uppercase tracking-[0.24em] text-stone-500">
-        {eyebrow}
-      </p> */}
-    <a href={link} target="_blank" rel="noopener noreferrer">
+    <article className="flex h-full flex-col rounded-2xl border border-[var(--border-card)] bg-[var(--card-surface)] shadow-[0_10px_35px_var(--shadow-card)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_18px_50px_var(--shadow-card-lg)]">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex h-full flex-col p-5"
+      >
         {imgSrc && (
-          <img
-            src={imgSrc}
-            alt={title}
-            className="mt-3 h-30 w-30 object-cover rounded-[1.1rem] w-auto h-auto shadow-[0_14px_40px_rgba(28,25,23,0.18)]"
-          />
+          <div className="aspect-[4/3] w-full overflow-hidden rounded-xl">
+            <img
+              src={imgSrc}
+              alt={title}
+              className="h-full w-full rounded-xl object-cover shadow-[0_14px_40px_var(--shadow-card)]"
+            />
+          </div>
         )}
-        <h3 className="mt-3 text-2xl font-semibold tracking-tight text-stone-950">
+        <h3 className="mt-3 text-lg font-semibold tracking-tight text-[var(--red-dark)]">
           {title}
         </h3>
-        <p className="mt-3 text-base leading-7 text-stone-700">{description}</p>
-        <p className="mt-2 text-sm text-stone-500">{date}</p>
+        {description && (
+          <p className="mt-1.5 flex-1 text-sm leading-relaxed text-[var(--text-muted)]">
+            {description}
+          </p>
+        )}
+        {date && (
+          <p className="mt-2 text-xs font-medium text-[var(--red-primary)]">
+            {date}
+          </p>
+        )}
       </a>
     </article>
   );
