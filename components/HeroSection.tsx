@@ -88,7 +88,7 @@ export function HeroSection({ highlights }: { highlights: HeroHighlight[] }) {
             variants={titleLine}
             className="hero-script text-4xl font-bold leading-[1.15] tracking-tight text-[var(--hero-faint)] sm:text-6xl lg:text-7xl"
           >
-            मांस क्लब
+            मांस कलब
           </motion.p>
           <motion.h1
             variants={titleLine}
@@ -107,7 +107,7 @@ export function HeroSection({ highlights }: { highlights: HeroHighlight[] }) {
             variants={titleLine}
             className="hero-script text-4xl font-bold leading-[1.15] tracking-tight text-[var(--hero-faint)] sm:text-6xl lg:text-7xl"
           >
-            മാസ് ക്ലബ്
+            മാസ് കലബ്
           </motion.p>
         </div>
 
