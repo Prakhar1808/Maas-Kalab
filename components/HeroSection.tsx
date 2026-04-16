@@ -86,9 +86,16 @@ export function HeroSection({ highlights }: { highlights: HeroHighlight[] }) {
         <div className="mx-auto max-w-5xl space-y-0">
           <motion.p
             variants={titleLine}
+            dir="rtl"
             className="hero-script text-4xl font-bold leading-[1.15] tracking-tight text-[var(--hero-faint)] sm:text-6xl lg:text-7xl"
           >
-            मांस कलब
+            ਮਾਸ ਕਾਲਾਬ
+          </motion.p>
+          <motion.p
+            variants={titleLine}
+            className="hero-script text-4xl font-bold leading-[1.15] tracking-tight text-[var(--hero-faint)] sm:text-6xl lg:text-7xl"
+          >
+            मास कलाब
           </motion.p>
           <motion.h1
             variants={titleLine}

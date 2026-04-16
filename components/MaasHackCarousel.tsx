@@ -126,9 +126,6 @@ export function MaasHackCarousel({ slides }: Props) {
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 p-5 sm:p-6">
                   <div className="min-w-0">
-                    <p className="text-[0.6rem] font-bold uppercase tracking-[0.25em] text-white/60">
-                      Flagship
-                    </p>
                     <h3 className="mt-0.5 text-xl font-semibold tracking-tight text-white sm:text-2xl">
                       {slide.title}
                     </h3>

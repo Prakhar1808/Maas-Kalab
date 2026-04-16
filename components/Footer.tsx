@@ -18,12 +18,19 @@ export function Footer() {
                 >
                   abneeeees
                 </a>
-                {" & "}
+                {", "}
                 <a
                   href="https://v8v88v8v88.com"
                   className="font-medium text-[var(--footer-link)] underline decoration-[var(--footer-accent-border)] underline-offset-4 transition-colors hover:text-[var(--footer-link-hover)] hover:decoration-[var(--footer-accent)]"
                 >
                   V8
+                </a>
+                {" & "}
+                <a
+                  href="https://github.com/lilsuperuser"
+                  className="font-medium text-[var(--footer-link)] underline decoration-[var(--footer-accent-border)] underline-offset-4 transition-colors hover:text-[var(--footer-link-hover)] hover:decoration-[var(--footer-accent)]"
+                >
+                  LilSuperUser
                 </a>
               </p>
             </div>

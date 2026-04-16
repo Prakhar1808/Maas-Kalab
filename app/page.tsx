@@ -9,14 +9,17 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { FoodMarquee } from "@/components/TrilingualStrip";
 
 const members = [
-  { name: "Mallu", description: "President of Maas Kalab" },
-  { name: "Sejal", description: "Maas Enthusiast" },
-  { name: "echidna tea", description: "Vice President of Maas Kalab" },
-  { name: "abneeeees", description: "Food Inspector of Maas Kalab" },
-  { name: "V8", description: "Event Coordinator of Maas Kalab" },
-  { name: "LilSuperUser", description: "Maas Explorer" },
-  { name: "Karan", description: "Maas Enthusiast" },
-  { name: "K2", description: "Maas Man" },
+  { name: "Mallu", description: "President of Maas Kalab"},
+  { name: "Mango", description: "Prime Minister Maas Kalab"},
+  { name: "echidna tea", description: "Vice President of Maas Kalab"},
+  { name: "abneeeees", description: "Mentor of Maas Kalab"},
+  { name: "V8", description: "CEO of Maas Kalab"},
+  { name: "P4", description: "CEO of Maas Kalab"},
+  { name: "LilSuperUser", description: "Maas Explorer"},
+  { name: "AK", description: "Maas Man"},
+  { name: "Satyam", description: "Duke of Dua"},
+  { name: "Prakhar", description: "Maas Khor"},
+  { name: "Karan", description: "Opposition ka lead"},
 ];
 
 const resources = [
@@ -92,28 +95,28 @@ const massHackSlides = [
   {
     imgSrc: "maashack/maashack_1.png",
     title: "Maas Hack 1.0",
-    description: "placeholder",
+    description: "Jama masjid | Chicken Korma, Chicken fry",
     date: "04-10-25",
     href: "/masshacks/1",
   },
   {
     imgSrc: "maashack/maashack_2.png",
     title: "Maas Hack 2.0",
-    description: "placeholder",
+    description: "Shaheen Bagh | Chicken Mandi, Chicken roll, Seekh Kabab",
     date: "28-11-25",
     href: "/masshacks/2",
   },
   {
     imgSrc: "maashack/maashack_3.png",
     title: "Maas Hack 3.0",
-    description: "placeholder",
+    description: "Shaheen Bagh | Seekh Kabab, Nihari, Fish Fry, Shwarma, Gulawati Kebab ka roll",
     date: "05-03-26",
     href: "/masshacks/3",
   },
   {
     imgSrc: "maashack/maashack_4.png",
     title: "Maas Hack 4.0",
-    description: "placeholder",
+    description: "Zakhir Nagar | Lucknowi Galawati Buff Kebab, Buff keema, Varghi Paratha, Roasted and Fried Chicken",
     date: "15-04-26",
     href: "/masshacks/4",
   },
@@ -232,14 +235,14 @@ export default function Home() {
                   <span
                     className="maas-khor-name cursor-default font-semibold tracking-tight text-[var(--foreground)] transition-colors duration-300 hover:text-[var(--red-primary)]"
                     style={{ fontSize: `clamp(1.1rem, ${1.4 + (i % 3) * 0.35}rem, 2.2rem)` }}
-                  >
+                    >
                     {member.name}
                   </span>
                   <span className="pointer-events-none absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-[var(--foreground)] px-2.5 py-0.5 text-[0.6rem] font-medium text-[var(--background)] opacity-0 transition-all duration-300 group-hover:opacity-100">
                     {member.description}
                   </span>
                   {i < members.length - 1 && (
-                    <span className="ml-3 text-[var(--dot-inactive)] sm:ml-4" aria-hidden>·</span>
+                    <span className="ml-3 text-[var(--dot-inactive)] sm:ml-4" aria-hidden>.</span>
                   )}
                 </span>
               ))}
