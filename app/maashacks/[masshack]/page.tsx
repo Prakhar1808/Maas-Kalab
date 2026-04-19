@@ -6,6 +6,7 @@ import MaasHackDropdown from "@/components/MaasHackDropdown";
 import MaasHackNavigation from "@/components/maashack_navigation";
 import { MaasHackCardViewer } from "@/components/MaasHackCardViewer";
 import { useParams } from "next/navigation";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 const navItems: NavItem[] = [
   { label: "Home", href: "/#" },
@@ -142,12 +143,14 @@ export default function MaasHackPage() {
         <div className="mx-auto max-w-5xl">
           {/* Header */}
           <div className="mb-8 text-center">
-            <h1 className="bg-gradient-to-r from-[var(--red-primary)] to-[var(--amber-accent)] bg-clip-text text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl md:text-6xl">
-              {data.title}
-            </h1>
-            <p className="mt-3 text-sm font-medium text-[var(--red-primary)] sm:text-base">
-              {data.date}
-            </p>
+            <ScrollReveal>
+              <h1 className="bg-gradient-to-r from-[var(--red-primary)] to-[var(--amber-accent)] bg-clip-text text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl md:text-6xl">
+                {data.title}
+              </h1>
+              <p className="mt-3 text-sm font-medium text-[var(--red-primary)] sm:text-base">
+                {data.date}
+              </p>
+            </ScrollReveal>
           </div>
 
           {/* Image Card Viewer */}

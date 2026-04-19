@@ -106,28 +106,28 @@ const massHackSlides = [
     title: "Maas Hack 1.0",
     description: "Jama masjid | Chicken Korma, Chicken fry",
     date: "04-10-25",
-    href: "/masshacks/1",
+    href: "/maashacks/1",
   },
   {
     imgSrc: "maashack_page/two/maashack_2.png",
     title: "Maas Hack 2.0",
     description: "Shaheen Bagh | Chicken Mandi, Chicken roll, Seekh Kabab",
     date: "28-11-25",
-    href: "/masshacks/2",
+    href: "/maashacks/2",
   },
   {
     imgSrc: "maashack_page/three/maashack_3.png",
     title: "Maas Hack 3.0",
     description: "Shaheen Bagh | Seekh Kabab, Nihari, Fish Fry, Shwarma, Gulawati Kebab ka roll",
     date: "05-03-26",
-    href: "/masshacks/3",
+    href: "/maashacks/3",
   },
   {
     imgSrc: "maashack_page/four/maashack_4.png",
     title: "Maas Hack 4.0",
     description: "Zakhir Nagar | Lucknowi Galawati Buff Kebab, Buff keema, Varghi Paratha, Roasted and Fried Chicken",
     date: "15-04-26",
-    href: "/masshacks/4",
+    href: "/maashacks/4",
   },
 ];
 
